@@ -160,7 +160,12 @@ git clone https://github.com/seu-usuario/car_price.git
 cd car_price
 ```
 
-### 2. Crie e ative o ambiente virtual
+### 2. Crie a pasta para os modelos salvos
+```bash
+mkdir models
+```
+
+### 3. Crie e ative o ambiente virtual
 ```bash
 python -m venv .venv
 ```
@@ -175,29 +180,25 @@ Windows:
 .venv\Scripts\activate
 ```
 
-### 3. Instale as dependências
+### 4. Instale as dependências
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Inicie o mlflow
-Caso não foi treinar um novo modelo ou rodar o notebook, pode seguir para a próxima etapa.
-
+### 5. Inicie o mlflow
 ```bash
 mlflow ui
 ```
 Acesse o log dos treino em http://localhost:5000/ pelo navegador
 
-### 5. Treine o modelo
+### 6. Treine o modelo
 ```bash
 cd src
 python train.py
 ```
 O modelo será salvo em `models/random_forest.pkl`.
 
-Caso não queira treinar um novo, a pasta models já possui um pronto.
-
-### 6. Realize previsões
+### 7. Realize previsões
 O arquivo `data/new_data.csv` contém exemplos de dados novos para teste. Para usar seus próprios dados, substitua o caminho em `predict.py`(linha 10):
 
 ```python
