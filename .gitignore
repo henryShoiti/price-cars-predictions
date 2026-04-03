@@ -1,0 +1,10 @@
+mlflow.db
+mlartifacts
+
+.venv/
+
+# Caches do Python
+__pycache__/
+*.pyc
+
+*.pkl
