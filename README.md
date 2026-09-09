@@ -156,7 +156,7 @@ A proximidade entre o CV MAE ($1.629) e o MAE do teste ($1.615) confirma que o m
 
 ### 1. Clone o repositório
 ```bash
-git clone https://github.com/seu-usuario/car_price.git
+git clone https://github.com/henryShoiti/car_price.git
 cd car_price
 ```
 
